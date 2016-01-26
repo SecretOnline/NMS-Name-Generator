@@ -1,0 +1,110 @@
+a
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>No Man's Sky Planet Name Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <meta name="theme-color" content="#DBBB33">
+    <meta property="og:title" content="NMS Name Generator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://secretonline.github.io/NMS-Name-Generator" />
+    <!-- TODO: ADD PREVIEW IMAGES -->
+    <!-- <meta property="og:image" content="https://secretonline.github.io/NMS-Name-Generator/res/preview.png" />
+    <meta property="image_src" content="https://secretonline.github.io/NMS-Name-Generator/res/preview.png" /> -->
+    <link rel="icon" sizes="196x196" href="res/icon.png">
+    <!-- TODO: ADD EXTERNAL RESOURCES -->
+    <!-- <link rel="stylesheet" href="styles/generator.css"> -->
+    <!-- <script src="scripts/generator.js" async></script> -->
+  </head>
+
+  <body>
+    <header>
+      <h1>NMS Name Generator</h1>
+      <div class="button-container">
+        <a href="https://github.com/SecretOnline/NMS-Name-Generator">
+          <button type="button" class="github">
+            <img src="res/github.svg" alt="GitHub" />
+          </button>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="help">
+        <h2>No Man's Sky Planet Name Generator</h2>
+        <p>
+          This page is here to generate names for planets in the upcoming game <a href="http://www.no-mans-sky.com/">No Man's Sky</a>. These names are not representative of the pre-generated names that are going to be in the game.
+        </p>
+        <p>
+          There are two types of names. Standard Names and Coded Names.
+        </p>
+        <p>
+          Standard Names are randomly generated.
+          <!-- TODO: ADD BETTER DESCRIPTION -->
+        </p>
+        <p>
+          Coded Names take information that you have given and generates a meaningful name. There are 4 major parts to a name: <em>Solar Prefix</em>, <em>Solar Index</em>, <em>Planetary Index</em>, and <em>Planetary Suffix</em>.
+        </p>
+        <p>
+          The Solar Prefix gives information to what the planet's star is like. Possible values are:
+          <ul>
+            <li><strong>BI</strong> - Binary System</li>
+            <li><strong>DW</strong> - Dwarf Star</li>
+            <li><strong>G</strong> - Giant Star</li>
+            <li><strong>NU</strong> - Neutron Star</li>
+            <li><strong>P</strong> - Pulsar</li>
+            <li><strong>SG</strong> - Supergiant</li>
+          </ul>
+          If the star does not fit a category, this can be left blank.
+        </p>
+        <p>
+          The Solar Index informs the reader of the star's colour. In the case of a binary system, only the first letter of each colour is used.
+          <ul>
+            <li><strong>RE</strong> - Red</li>
+            <li><strong>OG</strong> - Orange</li>
+            <li><strong>YE</strong> - Yellow</li>
+            <li><strong>WH</strong> - White</li>
+            <li><strong>BL</strong> - Blue</li>
+          </ul>
+        </p>
+        <p>
+          The Planetary Index describes the planet itself. It consists of three didgits, each describing a different aspect.
+          <ul>
+            <li>The first digit describes the size of the planet. It ranges from 0 (tiny) to 9 (humongous)</li>
+            <li>The second digit indicates the climate; from 0 (cold and icy) to 9 (hot and covered in lava)</li>
+            <li>The third digit sprcifies the surivability. It's range goes from 0 (absolutely perfect) to 9 (unable to support life, terraforming not worth it)</li>
+          </ul>
+        </p>
+        <p>
+          The Planetary Suffix gives further information on the planet.
+          <ul>
+            <li><strong>a</strong> - Alcoholic atmosphere, oceans, or environment</li>
+            <li><strong>l</strong> - Supports life</li>
+            <li><strong>q</strong> - Supports complex life</li>
+            <li><strong>r</strong> - Radioactive atmosphere, oceans, or environment</li>
+            <li><strong>x</strong> - Toxic atmosphere, oceans, or environment</li>
+          </ul>
+          If none of the conditions apply, this can be left blank.
+        </p>
+        <hr>
+        <p>
+          This generator was inspired by <a href="https://www.reddit.com/r/NoMansSkyTheGame/comments/42pv9s/standard_and_coded_planet_names/">/u/Toracr's post</a> on <a href="https://reddit.com/r/NoMansSkyTheGame">/r/NoMansSkyTheGame</a>.
+        </p>
+      </div>
+      <div class="forms">
+        <!-- TODO: FORMS AND HANDLING -->
+        <div class="half standard-name">
+
+        </div>
+        <div class="half coded-name">
+
+        </div>
+      </div>
+      <div class="results">
+        <!-- TODO: OUTPUT -->
+      </div>
+    </main>
+  </body>
+
+</html>
