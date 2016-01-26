@@ -1,0 +1,67 @@
+h1,
+h2,
+h3,
+header,
+nav {
+  font-family: geosanslight-nmsregular, 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+}
+h4 {
+  font-family: geosanslight-nmsregular, 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+  margin: 5px 0;
+}
+body,
+.info-card,
+.search-area input {
+  font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+.center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+header {
+  background-color: #dbbb33;
+  max-height: 70px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .3);
+}
+header .title {
+  line-height: 50px;
+  font-size: 22px;
+  padding: 10px;
+  margin: 0 auto;
+  color: #fff;
+}
+header .button-container {
+  position: absolute;
+  height: 70px;
+  right: 0;
+  top: 0;
+  transition: right 0.3s ease-out;
+}
+header button {
+  padding: 0;
+  transition: background-color 0.2s ease-out;
+  border: none;
+  background-color: transparent;
+  background-image: none;
+  width: 70px;
+  height: 70px;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: -4px;
+  cursor: pointer;
+}
+header button:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+header button:focus {
+  outline: 0;
+}
+header button img {
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+}
