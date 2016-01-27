@@ -14,8 +14,7 @@
     <link rel="icon" sizes="196x196" href="res/icon.png">
     <link rel="stylesheet" href="styles/generator.css">
     <link rel="stylesheet" href="styles/fonts.css">
-    <!-- TODO: ADD EXTERNAL RESOURCES -->
-    <!-- <script src="scripts/generator.js" async></script> -->
+    <script src="scripts/generator.js" async></script>
   </head>
 
   <body>
@@ -116,9 +115,9 @@
           <div class="planet-binaryIndex">
             <label>Solar Index (Second Star): <input type="text" name="planet-solarIndex" value="" list="planet-solarIndex"></label>
           </div>
-          <label>Planet Size: <input type="range" name="planet-size" min="0" max="9"></label>
-          <label>Planet Climate: <input type="range" name="planet-climate" min="0" max="9"></label>
-          <label>Planet Survivability: <input type="range" name="planet-survivability" min="0" max="9"></label>
+          <label>Planet Size: <input type="range" name="planet-size" min="0" max="9"> <output></output></label>
+          <label>Planet Climate: <input type="range" name="planet-climate" min="0" max="9"> <output></output></label>
+          <label>Planet Survivability: <input type="range" name="planet-survivability" min="0" max="9"> <output></output></label>
           <div class="planet-suffix">
             <label>Alcoholic: <input type="checkbox" name="planet-alcoholic" value="a"></label>
             <label>Simple Life: <input type="checkbox" name="planet-simpleLife" value="l"></label>
@@ -129,10 +128,12 @@
           </div>
         </div>
       </div>
-      <div class="results">
-        <!-- TODO: OUTPUT -->
-      </div>
     </main>
+    <footer>
+      <!-- TODO: OUTPUT -->
+      <h3 class="result center">Result</h3>
+      <button type="button" name="button-generate" class="generate center">Generate</button>
+    </footer>
   </body>
 
 </html>

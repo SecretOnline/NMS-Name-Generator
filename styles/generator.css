@@ -85,6 +85,12 @@ main {
   /* TODO: ACTUALLY SHOW HELP WHEN NEEDED */
   display: none;
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  border-top: 2px solid #dbbb33;
+}
 @media all and (min-width: 920px) {
   header .menu {
     display: none;
