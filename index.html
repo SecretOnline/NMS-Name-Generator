@@ -71,7 +71,7 @@
           <ul>
             <li>The first digit describes the size of the planet. It ranges from 0 (tiny) to 9 (humongous)</li>
             <li>The second digit indicates the climate; from 0 (cold and icy) to 9 (hot and covered in lava)</li>
-            <li>The third digit sprcifies the surivability. It's range goes from 0 (absolutely perfect) to 9 (unable to support life, terraforming not worth it)</li>
+            <li>The third digit specifies the surivability. It's range goes from 0 (absolutely perfect) to 9 (unable to support life, terraforming not worth it)</li>
           </ul>
         </p>
         <p>
@@ -92,11 +92,23 @@
       </div>
       <div class="forms">
         <!-- TODO: FORMS AND HANDLING -->
-        <div class="half standard-name">
-
-        </div>
-        <div class="half coded-name">
-
+        <div class="planet-name">
+          <label>Solar Prefix: <input type="text" name="planet-solarPrefix" value="" list="values-planet-solarPrefix"></label>
+          <label>Solar Index: <input type="text" name="planet-solarIndex" value="" list="values-planet-solarIndex"></label>
+          <div class="planet-binaryIndex">
+            <label>Solar Index (Second Star): <input type="text" name="planet-solarIndex" value="" list="planet-solarIndex"></label>
+          </div>
+          <label>Planet Size: <input type="range" name="planet-size" min="0" max="9"></label>
+          <label>Planet Climate: <input type="range" name="planet-climate" min="0" max="9"></label>
+          <label>Planet Survivability: <input type="range" name="planet-survivability" min="0" max="9"></label>
+          <div class="planet-suffix">
+            <label>Alcoholic: <input type="checkbox" name="planet-alcoholic" value="a"></label>
+            <label>Simple Life: <input type="checkbox" name="planet-simpleLife" value="l"></label>
+            <label>Complex Life: <input type="checkbox" name="planet-complexLife" value="q"></label>
+            <label>Radioactive: <input type="checkbox" name="planet-radioactive" value="r"></label>
+            <label>Toxic: <input type="checkbox" name="planet-toxic" value="x"></label>
+            <!-- TODO: ADD MORE MODIFIERS -->
+          </div>
         </div>
       </div>
       <div class="results">
