@@ -74,7 +74,6 @@
 
     // Add Planetary Suffixes if given
     for (var i = 0; i < mods.length; i++) {
-      console.log(mods[i].checked + ':' + mods[i].value);
       if (mods[i].checked) {
         name += mods[i].value;
       }
@@ -82,10 +81,10 @@
     if (disc || date) {
       name += '-';
       if (disc) {
-        if (disc.match(/\w{1,3}/)) {
+        if (disc.match(/^\w{1,3}$/)) {
           name += disc;
         } else {
-          return '[Error]: Name must be no more than 3 characters';
+          return '[Error]: Name must be "word characters" (letters, numbers, underscore)';
         }
       }
 
