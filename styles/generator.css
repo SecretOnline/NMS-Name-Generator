@@ -4,14 +4,15 @@ h3,
 header,
 nav {
   font-family: geosanslight-nmsregular, 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+  letter-spacing: 0.02em;
 }
 h4 {
   font-family: geosanslight-nmsregular, 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
   margin: 5px 0;
 }
 body,
-.info-card,
-.search-area input {
+input,
+button {
   font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
 }
 body {
@@ -85,11 +86,26 @@ main {
   /* TODO: ACTUALLY SHOW HELP WHEN NEEDED */
   display: none;
 }
+fieldset {
+  border: 1px solid #fff;
+}
 footer {
   position: fixed;
   bottom: 0;
   width: 100vw;
   border-top: 2px solid #dbbb33;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+button,
+input {
+  border: none;
+  border-bottom: 2px solid #dbbb33;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  outline: 0;
+}
+button:active,
+input:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media all and (min-width: 920px) {
