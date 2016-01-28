@@ -43,6 +43,8 @@
     var pSize = form.querySelector('input[name=planet-size]').value.toString();
     var pClimate = form.querySelector('input[name=planet-climate]').value.toString();
     var pSurv = form.querySelector('input[name=planet-survivability]').value.toString();
+    var disc = form.querySelector('input[name=planet-discoverer]').value.toString();
+    var date = new Date(form.querySelector('input[name=planet-discoveredDate]').value);
     var mods = form.querySelectorAll('.planet-suffix input[type=checkbox]');
 
     if (!sI) {
@@ -77,8 +79,25 @@
         name += mods[i].value;
       }
     }
+    if (disc || date) {
+      name += '-';
+      if (disc) {
+        if (disc.match(/\w{1,3}/)) {
+          name += disc;
+        } else {
+          return '[Error]: Name must be no more than 3 characters';
+        }
+      }
 
-    return name;
+      if (date) {
+        if (disc) {
+          name += '.';
+        }
+        name += date.getFullYear().toString() + ((date.getMonth() + 1 < 10) ? '0' : '') + (date.getMonth() + 1) + ((date.getDate() < 10) ? '0' : '') + date.getDate();
+      }
+
+      return name;
+    }
   }
 
   /**
