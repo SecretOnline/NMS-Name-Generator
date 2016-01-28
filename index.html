@@ -109,25 +109,31 @@
       </div>
       <div class="forms">
         <!-- TODO: FORMS AND HANDLING -->
-        <div class="form-planetName">
+        <form class="form-planetName">
           <h2 class="center">Planet</h2>
-          <label>Solar Prefix: <input type="text" name="planet-solarPrefix" value="" list="values-planet-solarPrefix"></label>
-          <label>Solar Index: <input type="text" name="planet-solarIndex" value="" list="values-planet-solarIndex"></label>
-          <div class="planet-binaryIndex" style="display: none;">
-            <label>Solar Index (Second Star): <input type="text" name="planet-solarIndexBinary" value="" list="values-planet-solarIndex"></label>
-          </div>
-          <label>Planet Size: <input type="range" name="planet-size" min="0" max="9"> <output></output></label>
-          <label>Planet Climate: <input type="range" name="planet-climate" min="0" max="9"> <output></output></label>
-          <label>Planet Survivability: <input type="range" name="planet-survivability" min="0" max="9"> <output></output></label>
-          <div class="planet-suffix">
-            <label>Alcoholic: <input type="checkbox" name="planet-alcoholic" value="a"></label>
-            <label>Simple Life: <input type="checkbox" name="planet-simpleLife" value="l"></label>
-            <label>Complex Life: <input type="checkbox" name="planet-complexLife" value="q"></label>
-            <label>Radioactive: <input type="checkbox" name="planet-radioactive" value="r"></label>
-            <label>Toxic: <input type="checkbox" name="planet-toxic" value="x"></label>
-            <!-- TODO: ADD MORE MODIFIERS -->
-          </div>
-        </div>
+          <fieldset>
+            <legend>Sun</legend>
+            <label>Solar Prefix: <input type="text" name="planet-solarPrefix" value="" list="values-planet-solarPrefix"></label>
+            <label>Solar Index: <input type="text" name="planet-solarIndex" value="" list="values-planet-solarIndex"></label>
+            <div class="planet-binaryIndex" style="display: none;">
+              <label>Solar Index (Second Star): <input type="text" name="planet-solarIndexBinary" value="" list="values-planet-solarIndex"></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Planet</legend>
+            <label>Planet Size: <input type="range" name="planet-size" min="0" max="9"> <output></output></label>
+            <label>Planet Climate: <input type="range" name="planet-climate" min="0" max="9"> <output></output></label>
+            <label>Planet Survivability: <input type="range" name="planet-survivability" min="0" max="9"> <output></output></label>
+            <div class="planet-suffix">
+              <label>Alcoholic: <input type="checkbox" name="planet-alcoholic" value="a"></label>
+              <label>Simple Life: <input type="checkbox" name="planet-simpleLife" value="l"></label>
+              <label>Complex Life: <input type="checkbox" name="planet-complexLife" value="q"></label>
+              <label>Radioactive: <input type="checkbox" name="planet-radioactive" value="r"></label>
+              <label>Toxic: <input type="checkbox" name="planet-toxic" value="x"></label>
+              <!-- TODO: ADD MORE MODIFIERS -->
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
     <footer>
