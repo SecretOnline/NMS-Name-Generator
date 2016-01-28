@@ -110,10 +110,11 @@
       <div class="forms">
         <!-- TODO: FORMS AND HANDLING -->
         <div class="form-planetName">
+          <h2 class="center">Planet</h2>
           <label>Solar Prefix: <input type="text" name="planet-solarPrefix" value="" list="values-planet-solarPrefix"></label>
           <label>Solar Index: <input type="text" name="planet-solarIndex" value="" list="values-planet-solarIndex"></label>
-          <div class="planet-binaryIndex">
-            <label>Solar Index (Second Star): <input type="text" name="planet-solarIndexBinary" value="" list="planet-solarIndex"></label>
+          <div class="planet-binaryIndex" style="display: none;">
+            <label>Solar Index (Second Star): <input type="text" name="planet-solarIndexBinary" value="" list="values-planet-solarIndex"></label>
           </div>
           <label>Planet Size: <input type="range" name="planet-size" min="0" max="9"> <output></output></label>
           <label>Planet Climate: <input type="range" name="planet-climate" min="0" max="9"> <output></output></label>
@@ -131,7 +132,7 @@
     </main>
     <footer>
       <!-- TODO: OUTPUT -->
-      <h3 class="result center">Result</h3>
+      <h2 class="result center">Result</h2>
       <button type="button" name="button-generate" class="generate center">Generate</button>
     </footer>
   </body>

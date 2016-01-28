@@ -1,9 +1,32 @@
 (function(win, doc) {
   'use strict';
 
+  var descriptions;
+
   function initGenerator() {
     doc.querySelector('.generate').addEventListener('click', function() {
       setResult(generatePlanetName());
+    });
+
+    // Add change listeners to planet form inputs
+    var planetForm = doc.querySelector('.form-planetName');
+    planetForm.querySelector('input[name=planet-solarPrefix]').addEventListener('input', function() {
+      var secondIndexCont = planetForm.querySelector('.planet-binaryIndex');
+      if (this.value === 'BI') {
+        secondIndexCont.style.display = 'block';
+      } else {
+        secondIndexCont.style.display = 'none';
+      }
+    });
+    // TODO: ADD HUMAN-READABLE STRINGS FOR EACH SLIDER OPTION
+    planetForm.querySelector('input[name=planet-size]').addEventListener('input', function() {
+      this.parentNode.querySelector('output').textContent = this.value;
+    });
+    planetForm.querySelector('input[name=planet-climate]').addEventListener('input', function() {
+      this.parentNode.querySelector('output').textContent = this.value;
+    });
+    planetForm.querySelector('input[name=planet-survivability]').addEventListener('input', function() {
+      this.parentNode.querySelector('output').textContent = this.value;
     });
   }
 

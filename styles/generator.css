@@ -90,6 +90,7 @@ footer {
   bottom: 0;
   width: 100vw;
   border-top: 2px solid #dbbb33;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 @media all and (min-width: 920px) {
   header .menu {
